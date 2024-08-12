@@ -24,4 +24,5 @@ dist-ssr
 *.sw?
 
 .metals
+.bsp
 .scala-build
