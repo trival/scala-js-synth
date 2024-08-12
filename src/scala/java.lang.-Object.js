@@ -7,6 +7,7 @@ var $linkingInfo = Object.freeze(({
   "linkerVersion": "1.16.0",
   "fileLevelThis": this
 }));
+export { $linkingInfo as $linkingInfo };
 var $getOwnPropertyDescriptors = (Object.getOwnPropertyDescriptors || (() => {
   var ownKeysFun;
   if ((((typeof Reflect) !== "undefined") && Reflect.ownKeys)) {
@@ -33,10 +34,13 @@ var $getOwnPropertyDescriptors = (Object.getOwnPropertyDescriptors || (() => {
     return descriptors;
   });
 })());
+export { $getOwnPropertyDescriptors as $getOwnPropertyDescriptors };
 var $L0;
+export { $L0 as $L0 };
 function $Char(c) {
   this.c = c;
 }
+export { $Char as $Char };
 $p = $Char.prototype;
 $p.toString = (function() {
   return String.fromCharCode(this.c);
@@ -44,9 +48,11 @@ $p.toString = (function() {
 function $noIsInstance(arg0) {
   throw new TypeError("Cannot call isInstance() on a Class representing a JS trait/object");
 }
+export { $noIsInstance as $noIsInstance };
 function $newArrayObject(arg0, arg1) {
   return $newArrayObjectInternal(arg0, arg1, 0);
 }
+export { $newArrayObject as $newArrayObject };
 function $newArrayObjectInternal(arg0, arg1, arg2) {
   var result = new arg0.C(arg1[arg2]);
   if ((arg2 < (arg1.length - 1))) {
@@ -59,12 +65,15 @@ function $newArrayObjectInternal(arg0, arg1, arg2) {
   }
   return result;
 }
+export { $newArrayObjectInternal as $newArrayObjectInternal };
 function $objectClone(arg0) {
   return Object.create(Object.getPrototypeOf(arg0), $getOwnPropertyDescriptors(arg0));
 }
+export { $objectClone as $objectClone };
 function $objectOrArrayClone(arg0) {
   return (arg0.$classData.isArrayClass ? arg0.e() : $objectClone(arg0));
 }
+export { $objectOrArrayClone as $objectOrArrayClone };
 function $objectClassName(arg0) {
   switch ((typeof arg0)) {
     case "string": {
@@ -93,7 +102,7 @@ function $objectClassName(arg0) {
     }
     default: {
       if ((arg0 === null)) {
-        return arg0.Y();
+        return arg0.Z();
       } else if ((arg0 instanceof $c_RTLong)) {
         return "java.lang.Long";
       } else if ((arg0 instanceof $Char)) {
@@ -101,11 +110,12 @@ function $objectClassName(arg0) {
       } else if ((!(!(arg0 && arg0.$classData)))) {
         return arg0.$classData.name;
       } else {
-        return null.Z();
+        return null.a0();
       }
     }
   }
 }
+export { $objectClassName as $objectClassName };
 function $dp_hashCode__I(instance) {
   switch ((typeof instance)) {
     case "string": {
@@ -133,9 +143,11 @@ function $dp_hashCode__I(instance) {
     }
   }
 }
+export { $dp_hashCode__I as $dp_hashCode__I };
 function $dp_toString__T(instance) {
   return ((instance === (void 0)) ? "undefined" : instance.toString());
 }
+export { $dp_toString__T as $dp_toString__T };
 function $intDiv(arg0, arg1) {
   if ((arg1 === 0)) {
     throw new $c_jl_ArithmeticException("/ by zero");
@@ -143,6 +155,7 @@ function $intDiv(arg0, arg1) {
     return ((arg0 / arg1) | 0);
   }
 }
+export { $intDiv as $intDiv };
 function $intMod(arg0, arg1) {
   if ((arg1 === 0)) {
     throw new $c_jl_ArithmeticException("/ by zero");
@@ -150,12 +163,15 @@ function $intMod(arg0, arg1) {
     return ((arg0 % arg1) | 0);
   }
 }
+export { $intMod as $intMod };
 function $doubleToInt(arg0) {
   return ((arg0 > 2147483647) ? 2147483647 : ((arg0 < (-2147483648)) ? (-2147483648) : (arg0 | 0)));
 }
+export { $doubleToInt as $doubleToInt };
 function $cToS(arg0) {
   return String.fromCharCode(arg0);
 }
+export { $cToS as $cToS };
 function $resolveSuperRef(arg0, arg1) {
   var getPrototypeOf = Object.getPrototyeOf;
   var getOwnPropertyDescriptor = Object.getOwnPropertyDescriptor;
@@ -168,6 +184,7 @@ function $resolveSuperRef(arg0, arg1) {
     superProto = getPrototypeOf(superProto);
   }
 }
+export { $resolveSuperRef as $resolveSuperRef };
 function $superGet(arg0, arg1, arg2) {
   var desc = $resolveSuperRef(arg0, arg2);
   if ((desc !== (void 0))) {
@@ -175,6 +192,7 @@ function $superGet(arg0, arg1, arg2) {
     return ((getter !== (void 0)) ? getter.call(arg1) : getter.value);
   }
 }
+export { $superGet as $superGet };
 function $superSet(arg0, arg1, arg2, arg3) {
   var desc = $resolveSuperRef(arg0, arg2);
   if ((desc !== (void 0))) {
@@ -186,6 +204,7 @@ function $superSet(arg0, arg1, arg2, arg3) {
   }
   throw new TypeError((("super has no setter '" + arg2) + "'."));
 }
+export { $superSet as $superSet };
 function $arraycopyGeneric(arg0, arg1, arg2, arg3, arg4) {
   if ((((arg0 !== arg2) || (arg3 < arg1)) || (((arg1 + arg4) | 0) < arg3))) {
     for (var i = 0; (i < arg4); i = ((i + 1) | 0)) {
@@ -197,6 +216,7 @@ function $arraycopyGeneric(arg0, arg1, arg2, arg3, arg4) {
     }
   }
 }
+export { $arraycopyGeneric as $arraycopyGeneric };
 var $lastIDHash = 0;
 var $idHashCodeMap = new WeakMap();
 function $systemIdentityHashCode(obj) {
@@ -243,36 +263,47 @@ function $systemIdentityHashCode(obj) {
     }
   }
 }
+export { $systemIdentityHashCode as $systemIdentityHashCode };
 function $isByte(arg0) {
   return ((((typeof arg0) === "number") && (((arg0 << 24) >> 24) === arg0)) && ((1 / arg0) !== (1 / (-0))));
 }
+export { $isByte as $isByte };
 function $isShort(arg0) {
   return ((((typeof arg0) === "number") && (((arg0 << 16) >> 16) === arg0)) && ((1 / arg0) !== (1 / (-0))));
 }
+export { $isShort as $isShort };
 function $isInt(arg0) {
   return ((((typeof arg0) === "number") && ((arg0 | 0) === arg0)) && ((1 / arg0) !== (1 / (-0))));
 }
+export { $isInt as $isInt };
 function $isFloat(arg0) {
   return (((typeof arg0) === "number") && ((arg0 !== arg0) || (Math.fround(arg0) === arg0)));
 }
+export { $isFloat as $isFloat };
 function $bC(arg0) {
   return new $Char(arg0);
 }
+export { $bC as $bC };
 var $bC0 = $bC(0);
+export { $bC0 as $bC0 };
 function $uC(arg0) {
   return ((arg0 === null) ? 0 : arg0.c);
 }
+export { $uC as $uC };
 function $uJ(arg0) {
   return ((arg0 === null) ? $L0 : arg0);
 }
+export { $uJ as $uJ };
 /** @constructor */
 function $c_O() {
 }
+export { $c_O as $c_O };
 $p = $c_O.prototype;
 $p.constructor = $c_O;
 /** @constructor */
 function $h_O() {
 }
+export { $h_O as $h_O };
 $h_O.prototype = $p;
 $p.g = (function() {
   return $systemIdentityHashCode(this);
@@ -294,6 +325,7 @@ function $ac_O(arg) {
     this.a = arg;
   }
 }
+export { $ac_O as $ac_O };
 $p = $ac_O.prototype = new $h_O();
 $p.constructor = $ac_O;
 $p.f = (function(srcPos, dest, destPos, length) {
@@ -304,6 +336,7 @@ $p.e = (function() {
 });
 function $ah_O() {
 }
+export { $ah_O as $ah_O };
 $ah_O.prototype = $p;
 function $ac_Z(arg) {
   if (((typeof arg) === "number")) {
@@ -315,6 +348,7 @@ function $ac_Z(arg) {
     this.a = arg;
   }
 }
+export { $ac_Z as $ac_Z };
 $p = $ac_Z.prototype = new $h_O();
 $p.constructor = $ac_Z;
 $p.f = (function(srcPos, dest, destPos, length) {
@@ -330,6 +364,7 @@ function $ac_C(arg) {
     this.a = arg;
   }
 }
+export { $ac_C as $ac_C };
 $p = $ac_C.prototype = new $h_O();
 $p.constructor = $ac_C;
 $p.f = (function(srcPos, dest, destPos, length) {
@@ -345,6 +380,7 @@ function $ac_B(arg) {
     this.a = arg;
   }
 }
+export { $ac_B as $ac_B };
 $p = $ac_B.prototype = new $h_O();
 $p.constructor = $ac_B;
 $p.f = (function(srcPos, dest, destPos, length) {
@@ -360,6 +396,7 @@ function $ac_S(arg) {
     this.a = arg;
   }
 }
+export { $ac_S as $ac_S };
 $p = $ac_S.prototype = new $h_O();
 $p.constructor = $ac_S;
 $p.f = (function(srcPos, dest, destPos, length) {
@@ -375,6 +412,7 @@ function $ac_I(arg) {
     this.a = arg;
   }
 }
+export { $ac_I as $ac_I };
 $p = $ac_I.prototype = new $h_O();
 $p.constructor = $ac_I;
 $p.f = (function(srcPos, dest, destPos, length) {
@@ -393,6 +431,7 @@ function $ac_J(arg) {
     this.a = arg;
   }
 }
+export { $ac_J as $ac_J };
 $p = $ac_J.prototype = new $h_O();
 $p.constructor = $ac_J;
 $p.f = (function(srcPos, dest, destPos, length) {
@@ -408,6 +447,7 @@ function $ac_F(arg) {
     this.a = arg;
   }
 }
+export { $ac_F as $ac_F };
 $p = $ac_F.prototype = new $h_O();
 $p.constructor = $ac_F;
 $p.f = (function(srcPos, dest, destPos, length) {
@@ -423,6 +463,7 @@ function $ac_D(arg) {
     this.a = arg;
   }
 }
+export { $ac_D as $ac_D };
 $p = $ac_D.prototype = new $h_O();
 $p.constructor = $ac_D;
 $p.f = (function(srcPos, dest, destPos, length) {
@@ -450,6 +491,7 @@ function $TypeData() {
   this.isArrayClass = false;
   this.isInstance = (void 0);
 }
+export { $TypeData as $TypeData };
 $p = $TypeData.prototype;
 $p.p = (function(zero, arrayEncodedName, displayName, arrayClass, typedArrayClass) {
   this.n = ({});
@@ -561,31 +603,41 @@ function $isArrayOf_O(obj, depth) {
     return ((arrayDepth === depth) ? (!data.B.isPrimitive) : (arrayDepth > depth));
   }
 }
+export { $isArrayOf_O as $isArrayOf_O };
 function $isArrayOf_Z(obj, depth) {
   return (!(!(((obj && obj.$classData) && (obj.$classData.D === depth)) && (obj.$classData.B === $d_Z))));
 }
+export { $isArrayOf_Z as $isArrayOf_Z };
 function $isArrayOf_C(obj, depth) {
   return (!(!(((obj && obj.$classData) && (obj.$classData.D === depth)) && (obj.$classData.B === $d_C))));
 }
+export { $isArrayOf_C as $isArrayOf_C };
 function $isArrayOf_B(obj, depth) {
   return (!(!(((obj && obj.$classData) && (obj.$classData.D === depth)) && (obj.$classData.B === $d_B))));
 }
+export { $isArrayOf_B as $isArrayOf_B };
 function $isArrayOf_S(obj, depth) {
   return (!(!(((obj && obj.$classData) && (obj.$classData.D === depth)) && (obj.$classData.B === $d_S))));
 }
+export { $isArrayOf_S as $isArrayOf_S };
 function $isArrayOf_I(obj, depth) {
   return (!(!(((obj && obj.$classData) && (obj.$classData.D === depth)) && (obj.$classData.B === $d_I))));
 }
+export { $isArrayOf_I as $isArrayOf_I };
 function $isArrayOf_J(obj, depth) {
   return (!(!(((obj && obj.$classData) && (obj.$classData.D === depth)) && (obj.$classData.B === $d_J))));
 }
+export { $isArrayOf_J as $isArrayOf_J };
 function $isArrayOf_F(obj, depth) {
   return (!(!(((obj && obj.$classData) && (obj.$classData.D === depth)) && (obj.$classData.B === $d_F))));
 }
+export { $isArrayOf_F as $isArrayOf_F };
 function $isArrayOf_D(obj, depth) {
   return (!(!(((obj && obj.$classData) && (obj.$classData.D === depth)) && (obj.$classData.B === $d_D))));
 }
+export { $isArrayOf_D as $isArrayOf_D };
 var $d_O = new $TypeData();
+export { $d_O as $d_O };
 $d_O.n = ({});
 $d_O.E = "Ljava.lang.Object;";
 $d_O.F = ((that) => (!that.isPrimitive));
@@ -597,14 +649,23 @@ $d_O.A = new $TypeData().y($d_O, $ac_O, (void 0), ((that) => {
 }));
 $c_O.prototype.$classData = $d_O;
 var $d_V = new $TypeData().p((void 0), "V", "void", (void 0), (void 0));
+export { $d_V as $d_V };
 var $d_Z = new $TypeData().p(false, "Z", "boolean", $ac_Z, (void 0));
+export { $d_Z as $d_Z };
 var $d_C = new $TypeData().p(0, "C", "char", $ac_C, Uint16Array);
+export { $d_C as $d_C };
 var $d_B = new $TypeData().p(0, "B", "byte", $ac_B, Int8Array);
+export { $d_B as $d_B };
 var $d_S = new $TypeData().p(0, "S", "short", $ac_S, Int16Array);
+export { $d_S as $d_S };
 var $d_I = new $TypeData().p(0, "I", "int", $ac_I, Int32Array);
+export { $d_I as $d_I };
 var $d_J = new $TypeData().p(null, "J", "long", $ac_J, (void 0));
+export { $d_J as $d_J };
 var $d_F = new $TypeData().p(0.0, "F", "float", $ac_F, Float32Array);
+export { $d_F as $d_F };
 var $d_D = new $TypeData().p(0.0, "D", "double", $ac_D, Float64Array);
+export { $d_D as $d_D };
 /** @constructor */
 function $c_jl_FloatingPointBits$() {
   this.s = false;
@@ -623,11 +684,13 @@ function $c_jl_FloatingPointBits$() {
   this.r = ((new Int8Array(this.h, 0, 8)[0] | 0) === 1);
   this.t = null;
 }
+export { $c_jl_FloatingPointBits$ as $c_jl_FloatingPointBits$ };
 $p = $c_jl_FloatingPointBits$.prototype = new $h_O();
 $p.constructor = $c_jl_FloatingPointBits$;
 /** @constructor */
 function $h_jl_FloatingPointBits$() {
 }
+export { $h_jl_FloatingPointBits$ as $h_jl_FloatingPointBits$ };
 $h_jl_FloatingPointBits$.prototype = $p;
 $p.m = (function(value) {
   var iv = ((value | 0.0) | 0);
@@ -641,6 +704,7 @@ $p.m = (function(value) {
 var $d_jl_FloatingPointBits$ = new $TypeData().i($c_jl_FloatingPointBits$, "java.lang.FloatingPointBits$", ({
   q: 1
 }));
+export { $d_jl_FloatingPointBits$ as $d_jl_FloatingPointBits$ };
 var $n_jl_FloatingPointBits$;
 function $m_jl_FloatingPointBits$() {
   if ((!$n_jl_FloatingPointBits$)) {
@@ -648,15 +712,19 @@ function $m_jl_FloatingPointBits$() {
   }
   return $n_jl_FloatingPointBits$;
 }
+export { $m_jl_FloatingPointBits$ as $m_jl_FloatingPointBits$ };
 function $f_jl_Void__hashCode__I($thiz) {
   return 0;
 }
+export { $f_jl_Void__hashCode__I as $f_jl_Void__hashCode__I };
 function $f_jl_Void__toString__T($thiz) {
   return "undefined";
 }
+export { $f_jl_Void__toString__T as $f_jl_Void__toString__T };
 var $d_jl_Void = new $TypeData().i(0, "java.lang.Void", ({
   w: 1
 }), ((x) => (x === (void 0))));
+export { $d_jl_Void as $d_jl_Void };
 /** @constructor */
 function $c_RTLong(lo, hi) {
   this.b = 0;
@@ -664,13 +732,15 @@ function $c_RTLong(lo, hi) {
   this.b = lo;
   this.c = hi;
 }
+export { $c_RTLong as $c_RTLong };
 $p = $c_RTLong.prototype = new $h_O();
 $p.constructor = $c_RTLong;
 /** @constructor */
 function $h_RTLong() {
 }
+export { $h_RTLong as $h_RTLong };
 $h_RTLong.prototype = $p;
-$p.T = (function(that) {
+$p.U = (function(that) {
   if ((that instanceof $c_RTLong)) {
     var x2 = that;
     return ((this.b === x2.b) && (this.c === x2.c));
@@ -684,110 +754,110 @@ $p.g = (function() {
 $p.j = (function() {
   return $m_RTLong$().q(this.b, this.c);
 });
-$p.a6 = (function() {
+$p.a7 = (function() {
   return this.b;
+});
+$p.a6 = (function() {
+  return $m_RTLong$().p(this.b, this.c);
 });
 $p.a5 = (function() {
-  return $m_RTLong$().p(this.b, this.c);
-});
-$p.a4 = (function() {
   return $m_RTLong$().o(this.b, this.c);
 });
-$p.P = (function() {
+$p.Q = (function() {
   return ((this.b << 24) >> 24);
 });
-$p.a3 = (function() {
+$p.a4 = (function() {
   return ((this.b << 16) >> 16);
 });
-$p.a0 = (function() {
+$p.a1 = (function() {
   return this.b;
 });
-$p.a1 = (function() {
+$p.a2 = (function() {
   return $uJ(this);
 });
-$p.V = (function() {
+$p.W = (function() {
   return $m_RTLong$().p(this.b, this.c);
 });
-$p.S = (function() {
+$p.T = (function() {
   return $m_RTLong$().o(this.b, this.c);
 });
-$p.R = (function(that) {
+$p.S = (function(that) {
   var b = that;
   return $m_RTLong$().n(this.b, this.c, b.b, b.c);
 });
-$p.Q = (function(that) {
+$p.R = (function(that) {
   return $m_RTLong$().n(this.b, this.c, that.b, that.c);
 });
-$p.U = (function(b) {
+$p.V = (function(b) {
   return ((this.b === b.b) && (this.c === b.c));
 });
-$p.a2 = (function(b) {
+$p.a3 = (function(b) {
   return (!((this.b === b.b) && (this.c === b.c)));
-});
-$p.H = (function(b) {
-  var ahi = this.c;
-  var bhi = b.c;
-  return ((ahi === bhi) ? (((-2147483648) ^ this.b) < ((-2147483648) ^ b.b)) : (ahi < bhi));
 });
 $p.I = (function(b) {
   var ahi = this.c;
   var bhi = b.c;
-  return ((ahi === bhi) ? (((-2147483648) ^ this.b) <= ((-2147483648) ^ b.b)) : (ahi < bhi));
+  return ((ahi === bhi) ? (((-2147483648) ^ this.b) < ((-2147483648) ^ b.b)) : (ahi < bhi));
 });
-$p.D = (function(b) {
+$p.J = (function(b) {
   var ahi = this.c;
   var bhi = b.c;
-  return ((ahi === bhi) ? (((-2147483648) ^ this.b) > ((-2147483648) ^ b.b)) : (ahi > bhi));
+  return ((ahi === bhi) ? (((-2147483648) ^ this.b) <= ((-2147483648) ^ b.b)) : (ahi < bhi));
 });
 $p.E = (function(b) {
   var ahi = this.c;
   var bhi = b.c;
+  return ((ahi === bhi) ? (((-2147483648) ^ this.b) > ((-2147483648) ^ b.b)) : (ahi > bhi));
+});
+$p.F = (function(b) {
+  var ahi = this.c;
+  var bhi = b.c;
   return ((ahi === bhi) ? (((-2147483648) ^ this.b) >= ((-2147483648) ^ b.b)) : (ahi > bhi));
 });
-$p.a8 = (function() {
+$p.a9 = (function() {
   return new $c_RTLong((~this.b), (~this.c));
 });
-$p.B = (function(b) {
+$p.C = (function(b) {
   return new $c_RTLong((this.b | b.b), (this.c | b.c));
 });
-$p.A = (function(b) {
+$p.B = (function(b) {
   return new $c_RTLong((this.b & b.b), (this.c & b.c));
 });
-$p.O = (function(b) {
+$p.P = (function(b) {
   return new $c_RTLong((this.b ^ b.b), (this.c ^ b.c));
 });
-$p.J = (function(n) {
+$p.K = (function(n) {
   var lo = this.b;
   return new $c_RTLong((((32 & n) === 0) ? (lo << n) : 0), (((32 & n) === 0) ? (((((lo >>> 1) | 0) >>> ((31 - n) | 0)) | 0) | (this.c << n)) : (lo << n)));
 });
-$p.G = (function(n) {
+$p.H = (function(n) {
   var hi = this.c;
   return new $c_RTLong((((32 & n) === 0) ? (((this.b >>> n) | 0) | ((hi << 1) << ((31 - n) | 0))) : ((hi >>> n) | 0)), (((32 & n) === 0) ? ((hi >>> n) | 0) : 0));
 });
-$p.F = (function(n) {
+$p.G = (function(n) {
   var hi = this.c;
   return new $c_RTLong((((32 & n) === 0) ? (((this.b >>> n) | 0) | ((hi << 1) << ((31 - n) | 0))) : (hi >> n)), (((32 & n) === 0) ? (hi >> n) : (hi >> 31)));
 });
-$p.a7 = (function() {
+$p.a8 = (function() {
   var lo = this.b;
   var hi = this.c;
   return new $c_RTLong(((-lo) | 0), ((lo !== 0) ? (~hi) : ((-hi) | 0)));
 });
-$p.M = (function(b) {
+$p.N = (function(b) {
   var alo = this.b;
   var ahi = this.c;
   var bhi = b.c;
   var lo = ((alo + b.b) | 0);
   return new $c_RTLong(lo, ((((-2147483648) ^ lo) < ((-2147483648) ^ alo)) ? ((1 + ((ahi + bhi) | 0)) | 0) : ((ahi + bhi) | 0)));
 });
-$p.K = (function(b) {
+$p.L = (function(b) {
   var alo = this.b;
   var ahi = this.c;
   var bhi = b.c;
   var lo = ((alo - b.b) | 0);
   return new $c_RTLong(lo, ((((-2147483648) ^ lo) > ((-2147483648) ^ alo)) ? (((-1) + ((ahi - bhi) | 0)) | 0) : ((ahi - bhi) | 0)));
 });
-$p.N = (function(b) {
+$p.O = (function(b) {
   var alo = this.b;
   var blo = b.b;
   var a0 = (65535 & alo);
@@ -801,23 +871,26 @@ $p.N = (function(b) {
   var c1part = ((((a0b0 >>> 16) | 0) + a0b1) | 0);
   return new $c_RTLong(lo, ((((((((Math.imul(alo, b.c) + Math.imul(this.c, blo)) | 0) + Math.imul(a1, b1)) | 0) + ((c1part >>> 16) | 0)) | 0) + (((((65535 & c1part) + a1b0) | 0) >>> 16) | 0)) | 0));
 });
-$p.C = (function(b) {
+$p.D = (function(b) {
   var this$1 = $m_RTLong$();
   return new $c_RTLong(this$1.u(this.b, this.c, b.b, b.c), this$1.d);
 });
-$p.L = (function(b) {
+$p.M = (function(b) {
   var this$1 = $m_RTLong$();
   return new $c_RTLong(this$1.x(this.b, this.c, b.b, b.c), this$1.d);
 });
 function $isArrayOf_RTLong(obj, depth) {
   return (!(!(((obj && obj.$classData) && (obj.$classData.D === depth)) && obj.$classData.B.n.h)));
 }
+export { $isArrayOf_RTLong as $isArrayOf_RTLong };
 var $d_RTLong = new $TypeData().i($c_RTLong, "org.scalajs.linker.runtime.RuntimeLong", ({
   h: 1
 }));
+export { $d_RTLong as $d_RTLong };
 function $p_RTLong$__toUnsignedString__I__I__T($thiz, lo, hi) {
   return ((((-2097152) & hi) === 0) ? ("" + ((4.294967296E9 * hi) + (+(lo >>> 0.0)))) : $p_RTLong$__unsignedDivModHelper__I__I__I__I__I__O($thiz, lo, hi, 1000000000, 0, 2));
 }
+export { $p_RTLong$__toUnsignedString__I__I__T as $p_RTLong$__toUnsignedString__I__I__T };
 function $p_RTLong$__unsigned_$div__I__I__I__I__I($thiz, alo, ahi, blo, bhi) {
   if ((((-2097152) & ahi) === 0)) {
     if ((((-2097152) & bhi) === 0)) {
@@ -842,6 +915,7 @@ function $p_RTLong$__unsigned_$div__I__I__I__I__I($thiz, alo, ahi, blo, bhi) {
     return ($p_RTLong$__unsignedDivModHelper__I__I__I__I__I__O($thiz, alo, ahi, blo, bhi, 0) | 0);
   }
 }
+export { $p_RTLong$__unsigned_$div__I__I__I__I__I as $p_RTLong$__unsigned_$div__I__I__I__I__I };
 function $p_RTLong$__unsigned_$percent__I__I__I__I__I($thiz, alo, ahi, blo, bhi) {
   if ((((-2097152) & ahi) === 0)) {
     if ((((-2097152) & bhi) === 0)) {
@@ -864,6 +938,7 @@ function $p_RTLong$__unsigned_$percent__I__I__I__I__I($thiz, alo, ahi, blo, bhi)
     return ($p_RTLong$__unsignedDivModHelper__I__I__I__I__I__O($thiz, alo, ahi, blo, bhi, 1) | 0);
   }
 }
+export { $p_RTLong$__unsigned_$percent__I__I__I__I__I as $p_RTLong$__unsigned_$percent__I__I__I__I__I };
 function $p_RTLong$__unsignedDivModHelper__I__I__I__I__I__O($thiz, alo, ahi, blo, bhi, ask) {
   var shift = ((((bhi !== 0) ? (Math.clz32(bhi) | 0) : ((32 + (Math.clz32(blo) | 0)) | 0)) - ((ahi !== 0) ? (Math.clz32(ahi) | 0) : ((32 + (Math.clz32(alo) | 0)) | 0))) | 0);
   var n = shift;
@@ -943,15 +1018,18 @@ function $p_RTLong$__unsignedDivModHelper__I__I__I__I__I__O($thiz, alo, ahi, blo
     return ((("" + quot) + "000000000".substring(start)) + remStr);
   }
 }
+export { $p_RTLong$__unsignedDivModHelper__I__I__I__I__I__O as $p_RTLong$__unsignedDivModHelper__I__I__I__I__I__O };
 /** @constructor */
 function $c_RTLong$() {
   this.d = 0;
 }
+export { $c_RTLong$ as $c_RTLong$ };
 $p = $c_RTLong$.prototype = new $h_O();
 $p.constructor = $c_RTLong$;
 /** @constructor */
 function $h_RTLong$() {
 }
+export { $h_RTLong$ as $h_RTLong$ };
 $h_RTLong$.prototype = $p;
 $p.q = (function(lo, hi) {
   return ((hi === (lo >> 31)) ? ("" + lo) : ((hi < 0) ? ("-" + $p_RTLong$__toUnsignedString__I__I__T(this, ((-lo) | 0), ((lo !== 0) ? (~hi) : ((-hi) | 0)))) : $p_RTLong$__toUnsignedString__I__I__T(this, lo, hi)));
@@ -971,10 +1049,10 @@ $p.p = (function(lo, hi) {
   var absRes = ((4.294967296E9 * (+(abs__hi >>> 0.0))) + (+(compressedAbsLo >>> 0.0)));
   return Math.fround(((hi < 0) ? (-absRes) : absRes));
 });
-$p.X = (function(value) {
+$p.Y = (function(value) {
   return new $c_RTLong(value, (value >> 31));
 });
-$p.W = (function(value) {
+$p.X = (function(value) {
   return new $c_RTLong(this.w(value), this.d);
 });
 $p.w = (function(value) {
@@ -1089,6 +1167,7 @@ $p.x = (function(alo, ahi, blo, bhi) {
 var $d_RTLong$ = new $TypeData().i($c_RTLong$, "org.scalajs.linker.runtime.RuntimeLong$", ({
   x: 1
 }));
+export { $d_RTLong$ as $d_RTLong$ };
 var $n_RTLong$;
 function $m_RTLong$() {
   if ((!$n_RTLong$)) {
@@ -1096,36 +1175,17 @@ function $m_RTLong$() {
   }
   return $n_RTLong$;
 }
-/** @constructor */
-function $c_Ltest$package$() {
-}
-$p = $c_Ltest$package$.prototype = new $h_O();
-$p.constructor = $c_Ltest$package$;
-/** @constructor */
-function $h_Ltest$package$() {
-}
-$h_Ltest$package$.prototype = $p;
-$p.y = (function(a, b) {
-  return (a + b);
-});
-var $d_Ltest$package$ = new $TypeData().i($c_Ltest$package$, "test$package$", ({
-  z: 1
-}));
-var $n_Ltest$package$;
-function $m_Ltest$package$() {
-  if ((!$n_Ltest$package$)) {
-    $n_Ltest$package$ = new $c_Ltest$package$();
-  }
-  return $n_Ltest$package$;
-}
+export { $m_RTLong$ as $m_RTLong$ };
 /** @constructor */
 function $c_jl_Number() {
 }
+export { $c_jl_Number as $c_jl_Number };
 $p = $c_jl_Number.prototype = new $h_O();
 $p.constructor = $c_jl_Number;
 /** @constructor */
 function $h_jl_Number() {
 }
+export { $h_jl_Number as $h_jl_Number };
 $h_jl_Number.prototype = $p;
 function $ct_jl_Throwable__T__jl_Throwable__Z__Z__($thiz, s, e, enableSuppression, writableStackTrace) {
   $thiz.k = s;
@@ -1134,6 +1194,7 @@ function $ct_jl_Throwable__T__jl_Throwable__Z__Z__($thiz, s, e, enableSuppressio
   }
   return $thiz;
 }
+export { $ct_jl_Throwable__T__jl_Throwable__Z__Z__ as $ct_jl_Throwable__T__jl_Throwable__Z__Z__ };
 class $c_jl_Throwable extends Error {
   constructor() {
     super();
@@ -1141,7 +1202,7 @@ class $c_jl_Throwable extends Error {
   }
   v() {
     var $x_1 = this;
-    var reference = (false ? $x_1.z : $x_1);
+    var reference = (false ? $x_1.A : $x_1);
     if ((Object.prototype.toString.call(reference) !== "[object Error]")) {
       if ((Error.captureStackTrace === (void 0))) {
         new Error();
@@ -1170,40 +1231,50 @@ class $c_jl_Throwable extends Error {
     return this.j();
   }
 }
+export { $c_jl_Throwable as $c_jl_Throwable };
 class $c_jl_Exception extends $c_jl_Throwable {
 }
+export { $c_jl_Exception as $c_jl_Exception };
 function $f_jl_Boolean__hashCode__I($thiz) {
   return ($thiz ? 1231 : 1237);
 }
+export { $f_jl_Boolean__hashCode__I as $f_jl_Boolean__hashCode__I };
 function $f_jl_Boolean__toString__T($thiz) {
   return ("" + $thiz);
 }
+export { $f_jl_Boolean__toString__T as $f_jl_Boolean__toString__T };
 var $d_jl_Boolean = new $TypeData().i(0, "java.lang.Boolean", ({
   j: 1,
   a: 1,
   b: 1,
   c: 1
 }), ((x) => ((typeof x) === "boolean")));
+export { $d_jl_Boolean as $d_jl_Boolean };
 function $f_jl_Character__hashCode__I($thiz) {
   return $thiz;
 }
+export { $f_jl_Character__hashCode__I as $f_jl_Character__hashCode__I };
 function $f_jl_Character__toString__T($thiz) {
   return ("" + $cToS($thiz));
 }
+export { $f_jl_Character__toString__T as $f_jl_Character__toString__T };
 var $d_jl_Character = new $TypeData().i(0, "java.lang.Character", ({
   m: 1,
   a: 1,
   b: 1,
   c: 1
 }), ((x) => (x instanceof $Char)));
+export { $d_jl_Character as $d_jl_Character };
 class $c_jl_RuntimeException extends $c_jl_Exception {
 }
+export { $c_jl_RuntimeException as $c_jl_RuntimeException };
 class $c_jl_ArithmeticException extends $c_jl_RuntimeException {
   constructor(s) {
     super();
     $ct_jl_Throwable__T__jl_Throwable__Z__Z__(this, s, null, true, true);
   }
 }
+export { $c_jl_ArithmeticException as $c_jl_ArithmeticException };
 var $d_jl_ArithmeticException = new $TypeData().i($c_jl_ArithmeticException, "java.lang.ArithmeticException", ({
   i: 1,
   t: 1,
@@ -1211,12 +1282,15 @@ var $d_jl_ArithmeticException = new $TypeData().i($c_jl_ArithmeticException, "ja
   v: 1,
   a: 1
 }));
+export { $d_jl_ArithmeticException as $d_jl_ArithmeticException };
 function $f_jl_Byte__hashCode__I($thiz) {
   return $thiz;
 }
+export { $f_jl_Byte__hashCode__I as $f_jl_Byte__hashCode__I };
 function $f_jl_Byte__toString__T($thiz) {
   return ("" + $thiz);
 }
+export { $f_jl_Byte__toString__T as $f_jl_Byte__toString__T };
 var $d_jl_Byte = new $TypeData().i(0, "java.lang.Byte", ({
   k: 1,
   d: 1,
@@ -1224,12 +1298,15 @@ var $d_jl_Byte = new $TypeData().i(0, "java.lang.Byte", ({
   b: 1,
   c: 1
 }), ((x) => $isByte(x)));
+export { $d_jl_Byte as $d_jl_Byte };
 function $f_jl_Short__hashCode__I($thiz) {
   return $thiz;
 }
+export { $f_jl_Short__hashCode__I as $f_jl_Short__hashCode__I };
 function $f_jl_Short__toString__T($thiz) {
   return ("" + $thiz);
 }
+export { $f_jl_Short__toString__T as $f_jl_Short__toString__T };
 var $d_jl_Short = new $TypeData().i(0, "java.lang.Short", ({
   u: 1,
   d: 1,
@@ -1237,12 +1314,15 @@ var $d_jl_Short = new $TypeData().i(0, "java.lang.Short", ({
   b: 1,
   c: 1
 }), ((x) => $isShort(x)));
+export { $d_jl_Short as $d_jl_Short };
 function $f_jl_Double__hashCode__I($thiz) {
   return $m_jl_FloatingPointBits$().m($thiz);
 }
+export { $f_jl_Double__hashCode__I as $f_jl_Double__hashCode__I };
 function $f_jl_Double__toString__T($thiz) {
   return ("" + $thiz);
 }
+export { $f_jl_Double__toString__T as $f_jl_Double__toString__T };
 var $d_jl_Double = new $TypeData().i(0, "java.lang.Double", ({
   n: 1,
   d: 1,
@@ -1251,12 +1331,15 @@ var $d_jl_Double = new $TypeData().i(0, "java.lang.Double", ({
   c: 1,
   e: 1
 }), ((x) => ((typeof x) === "number")));
+export { $d_jl_Double as $d_jl_Double };
 function $f_jl_Float__hashCode__I($thiz) {
   return $m_jl_FloatingPointBits$().m($thiz);
 }
+export { $f_jl_Float__hashCode__I as $f_jl_Float__hashCode__I };
 function $f_jl_Float__toString__T($thiz) {
   return ("" + $thiz);
 }
+export { $f_jl_Float__toString__T as $f_jl_Float__toString__T };
 var $d_jl_Float = new $TypeData().i(0, "java.lang.Float", ({
   p: 1,
   d: 1,
@@ -1265,12 +1348,15 @@ var $d_jl_Float = new $TypeData().i(0, "java.lang.Float", ({
   c: 1,
   e: 1
 }), ((x) => $isFloat(x)));
+export { $d_jl_Float as $d_jl_Float };
 function $f_jl_Integer__hashCode__I($thiz) {
   return $thiz;
 }
+export { $f_jl_Integer__hashCode__I as $f_jl_Integer__hashCode__I };
 function $f_jl_Integer__toString__T($thiz) {
   return ("" + $thiz);
 }
+export { $f_jl_Integer__toString__T as $f_jl_Integer__toString__T };
 var $d_jl_Integer = new $TypeData().i(0, "java.lang.Integer", ({
   r: 1,
   d: 1,
@@ -1279,12 +1365,15 @@ var $d_jl_Integer = new $TypeData().i(0, "java.lang.Integer", ({
   c: 1,
   e: 1
 }), ((x) => $isInt(x)));
+export { $d_jl_Integer as $d_jl_Integer };
 function $f_jl_Long__hashCode__I($thiz) {
   return ($thiz.b ^ $thiz.c);
 }
+export { $f_jl_Long__hashCode__I as $f_jl_Long__hashCode__I };
 function $f_jl_Long__toString__T($thiz) {
   return $m_RTLong$().q($thiz.b, $thiz.c);
 }
+export { $f_jl_Long__toString__T as $f_jl_Long__toString__T };
 var $d_jl_Long = new $TypeData().i(0, "java.lang.Long", ({
   s: 1,
   d: 1,
@@ -1293,6 +1382,7 @@ var $d_jl_Long = new $TypeData().i(0, "java.lang.Long", ({
   c: 1,
   e: 1
 }), ((x) => (x instanceof $c_RTLong)));
+export { $d_jl_Long as $d_jl_Long };
 function $f_T__hashCode__I($thiz) {
   var res = 0;
   var mul = 1;
@@ -1304,12 +1394,15 @@ function $f_T__hashCode__I($thiz) {
   }
   return res;
 }
+export { $f_T__hashCode__I as $f_T__hashCode__I };
 function $f_T__toString__T($thiz) {
   return $thiz;
 }
+export { $f_T__toString__T as $f_T__toString__T };
 function $isArrayOf_T(obj, depth) {
   return (!(!(((obj && obj.$classData) && (obj.$classData.D === depth)) && obj.$classData.B.n.g)));
 }
+export { $isArrayOf_T as $isArrayOf_T };
 var $d_T = new $TypeData().i(0, "java.lang.String", ({
   g: 1,
   a: 1,
@@ -1318,12 +1411,10 @@ var $d_T = new $TypeData().i(0, "java.lang.String", ({
   c: 1,
   e: 1
 }), ((x) => ((typeof x) === "string")));
+export { $d_T as $d_T };
 function $isArrayOf_sjs_js_JavaScriptException(obj, depth) {
   return (!(!(((obj && obj.$classData) && (obj.$classData.D === depth)) && obj.$classData.B.n.y)));
 }
+export { $isArrayOf_sjs_js_JavaScriptException as $isArrayOf_sjs_js_JavaScriptException };
 $L0 = new $c_RTLong(0, 0);
 $d_J.z = $L0;
-let $e_test = (function(arg, arg$2) {
-  return $m_Ltest$package$().y((+arg), (+arg$2));
-});
-export { $e_test as test };

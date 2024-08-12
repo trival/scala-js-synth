@@ -3,5 +3,5 @@
 To compile the scala code, run the following command:
 
 ```bash
-scala-cli --power package --js src/test.scala -f -o src/test.scala.js
+scala-cli --power package --js project.scala -f -o src/scala
 ```
