@@ -1,4 +1,5 @@
 'use strict';
+import * as $i_$0040elemaudio$002fcore from "@elemaudio/core";
 import * as $j_java$002elang$002e$002dObject from "./java.lang.-Object.js";
 var $p;
 /** @constructor */
@@ -12,8 +13,8 @@ function $h_Ltest$package$() {
 }
 export { $h_Ltest$package$ as $h_Ltest$package$ };
 $h_Ltest$package$.prototype = $p;
-$p.y = (function(a, b) {
-  return (a + b);
+$p.u = (function() {
+  return [$i_$0040elemaudio$002fcore.el.cycle(440.0), $i_$0040elemaudio$002fcore.el.cycle(441.0)];
 });
 var $d_Ltest$package$ = new $j_java$002elang$002e$002dObject.$TypeData().i($c_Ltest$package$, "test$package$", ({
   z: 1

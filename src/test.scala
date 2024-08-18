@@ -1,4 +1,6 @@
 import scala.scalajs.js.annotation.*
+import scala.scalajs.js
+import audio.*
 
 @JSExportTopLevel("test")
-def testAdd(a: Double, b: Double): Double = a + b
+def audioChannels() = js.Array(cycle(440), 441.cycle)

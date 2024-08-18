@@ -1,4 +1,5 @@
 import scala.scalajs.js.annotation.*
+import scala.scalajs.js
 
 @JSExportTopLevel("test2")
-def testSub(a: Double, b: Double): Double = a - b
+val testSub: js.Function2[Double, Double, Double] = (a, b) => a - b
