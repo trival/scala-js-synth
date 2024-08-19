@@ -1,3 +1,5 @@
+package audio
+
 import scala.scalajs.js.annotation.*
 import scala.scalajs.js
 

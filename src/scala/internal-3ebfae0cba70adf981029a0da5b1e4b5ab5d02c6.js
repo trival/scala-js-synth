@@ -1,40 +1,13 @@
 'use strict';
 var $p;
 var $linkingInfo = Object.freeze(({
-  "esVersion": 6,
+  "esVersion": 12,
   "assumingES6": true,
   "productionMode": true,
   "linkerVersion": "1.16.0",
   "fileLevelThis": this
 }));
 export { $linkingInfo as $linkingInfo };
-var $getOwnPropertyDescriptors = (Object.getOwnPropertyDescriptors || (() => {
-  var ownKeysFun;
-  if ((((typeof Reflect) !== "undefined") && Reflect.ownKeys)) {
-    ownKeysFun = Reflect.ownKeys;
-  } else {
-    var getOwnPropertySymbols = (Object.getOwnPropertySymbols || ((o) => []));
-    ownKeysFun = ((o) => Object.getOwnPropertyNames(o).concat(getOwnPropertySymbols(o)));
-  }
-  return ((o) => {
-    var ownKeys = ownKeysFun(o);
-    var descriptors = ({});
-    var len = (ownKeys.length | 0);
-    var i = 0;
-    while ((i !== len)) {
-      var key = ownKeys[i];
-      Object.defineProperty(descriptors, key, ({
-        "configurable": true,
-        "enumerable": true,
-        "writable": true,
-        "value": Object.getOwnPropertyDescriptor(o, key)
-      }));
-      i = ((i + 1) | 0);
-    }
-    return descriptors;
-  });
-})());
-export { $getOwnPropertyDescriptors as $getOwnPropertyDescriptors };
 var $L0;
 export { $L0 as $L0 };
 function $Char(c) {
@@ -67,7 +40,7 @@ function $newArrayObjectInternal(arg0, arg1, arg2) {
 }
 export { $newArrayObjectInternal as $newArrayObjectInternal };
 function $objectClone(arg0) {
-  return Object.create(Object.getPrototypeOf(arg0), $getOwnPropertyDescriptors(arg0));
+  return Object.create(Object.getPrototypeOf(arg0), Object.getOwnPropertyDescriptors(arg0));
 }
 export { $objectClone as $objectClone };
 function $objectOrArrayClone(arg0) {
@@ -702,7 +675,7 @@ $p.m = (function(value) {
   }
 });
 var $d_jl_FloatingPointBits$ = new $TypeData().i($c_jl_FloatingPointBits$, "java.lang.FloatingPointBits$", ({
-  q: 1
+  s: 1
 }));
 export { $d_jl_FloatingPointBits$ as $d_jl_FloatingPointBits$ };
 var $n_jl_FloatingPointBits$;
@@ -722,7 +695,7 @@ function $f_jl_Void__toString__T($thiz) {
 }
 export { $f_jl_Void__toString__T as $f_jl_Void__toString__T };
 var $d_jl_Void = new $TypeData().i(0, "java.lang.Void", ({
-  w: 1
+  y: 1
 }), ((x) => (x === (void 0))));
 export { $d_jl_Void as $d_jl_Void };
 /** @constructor */
@@ -1165,7 +1138,7 @@ $p.y = (function(alo, ahi, blo, bhi) {
   }
 });
 var $d_RTLong$ = new $TypeData().i($c_RTLong$, "org.scalajs.linker.runtime.RuntimeLong$", ({
-  x: 1
+  z: 1
 }));
 export { $d_RTLong$ as $d_RTLong$ };
 var $n_RTLong$;
@@ -1244,7 +1217,7 @@ function $f_jl_Boolean__toString__T($thiz) {
 }
 export { $f_jl_Boolean__toString__T as $f_jl_Boolean__toString__T };
 var $d_jl_Boolean = new $TypeData().i(0, "java.lang.Boolean", ({
-  j: 1,
+  l: 1,
   a: 1,
   b: 1,
   c: 1
@@ -1259,7 +1232,7 @@ function $f_jl_Character__toString__T($thiz) {
 }
 export { $f_jl_Character__toString__T as $f_jl_Character__toString__T };
 var $d_jl_Character = new $TypeData().i(0, "java.lang.Character", ({
-  m: 1,
+  o: 1,
   a: 1,
   b: 1,
   c: 1
@@ -1276,10 +1249,10 @@ class $c_jl_ArithmeticException extends $c_jl_RuntimeException {
 }
 export { $c_jl_ArithmeticException as $c_jl_ArithmeticException };
 var $d_jl_ArithmeticException = new $TypeData().i($c_jl_ArithmeticException, "java.lang.ArithmeticException", ({
-  i: 1,
-  t: 1,
-  o: 1,
+  k: 1,
   v: 1,
+  q: 1,
+  x: 1,
   a: 1
 }));
 export { $d_jl_ArithmeticException as $d_jl_ArithmeticException };
@@ -1292,7 +1265,7 @@ function $f_jl_Byte__toString__T($thiz) {
 }
 export { $f_jl_Byte__toString__T as $f_jl_Byte__toString__T };
 var $d_jl_Byte = new $TypeData().i(0, "java.lang.Byte", ({
-  k: 1,
+  m: 1,
   d: 1,
   a: 1,
   b: 1,
@@ -1308,7 +1281,7 @@ function $f_jl_Short__toString__T($thiz) {
 }
 export { $f_jl_Short__toString__T as $f_jl_Short__toString__T };
 var $d_jl_Short = new $TypeData().i(0, "java.lang.Short", ({
-  u: 1,
+  w: 1,
   d: 1,
   a: 1,
   b: 1,
@@ -1324,7 +1297,7 @@ function $f_jl_Double__toString__T($thiz) {
 }
 export { $f_jl_Double__toString__T as $f_jl_Double__toString__T };
 var $d_jl_Double = new $TypeData().i(0, "java.lang.Double", ({
-  n: 1,
+  p: 1,
   d: 1,
   a: 1,
   b: 1,
@@ -1341,7 +1314,7 @@ function $f_jl_Float__toString__T($thiz) {
 }
 export { $f_jl_Float__toString__T as $f_jl_Float__toString__T };
 var $d_jl_Float = new $TypeData().i(0, "java.lang.Float", ({
-  p: 1,
+  r: 1,
   d: 1,
   a: 1,
   b: 1,
@@ -1358,7 +1331,7 @@ function $f_jl_Integer__toString__T($thiz) {
 }
 export { $f_jl_Integer__toString__T as $f_jl_Integer__toString__T };
 var $d_jl_Integer = new $TypeData().i(0, "java.lang.Integer", ({
-  r: 1,
+  t: 1,
   d: 1,
   a: 1,
   b: 1,
@@ -1375,7 +1348,7 @@ function $f_jl_Long__toString__T($thiz) {
 }
 export { $f_jl_Long__toString__T as $f_jl_Long__toString__T };
 var $d_jl_Long = new $TypeData().i(0, "java.lang.Long", ({
-  s: 1,
+  u: 1,
   d: 1,
   a: 1,
   b: 1,
@@ -1407,13 +1380,13 @@ var $d_T = new $TypeData().i(0, "java.lang.String", ({
   g: 1,
   a: 1,
   b: 1,
-  l: 1,
+  n: 1,
   c: 1,
   e: 1
 }), ((x) => ((typeof x) === "string")));
 export { $d_T as $d_T };
 function $isArrayOf_sjs_js_JavaScriptException(obj, depth) {
-  return (!(!(((obj && obj.$classData) && (obj.$classData.D === depth)) && obj.$classData.B.n.y)));
+  return (!(!(((obj && obj.$classData) && (obj.$classData.D === depth)) && obj.$classData.B.n.A)));
 }
 export { $isArrayOf_sjs_js_JavaScriptException as $isArrayOf_sjs_js_JavaScriptException };
 $L0 = new $c_RTLong(0, 0);
