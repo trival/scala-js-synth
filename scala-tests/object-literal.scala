@@ -1,4 +1,4 @@
-//> using scala 3.4.2
+//> using scala 3.5.0
 //> using jsVersion 1.16.0
 //> using jsMode full
 //> using jsModuleKind es
@@ -7,8 +7,6 @@
 
 import scala.scalajs.js.annotation.*
 import scala.scalajs.js
-import scala.scalajs.given
-import scala.scalajs.js.given
 
 @JSExportTopLevel("testObj1")
 val testObj1 = js.Dynamic.literal(a = 1, b = "bar")
