@@ -6,7 +6,5 @@
 //> using jsModuleSplitStyleStr smallmodulesfor
 //> using jsSmallModuleForPackage audio audio.libs
 //> using dep org.scala-js:scalajs-library_2.13:1.16.0
-//> using file src/libs/audio.scala
-//> using file src/test2.scala
-//> using file src/test.scala
 //> using option -language:implicitConversions
+//> using exclude scala-tests/*
