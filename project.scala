@@ -1,4 +1,4 @@
-//> using scala 3.4.2
+//> using scala 3.5.0
 //> using jsVersion 1.16.0
 //> using jsMode full
 //> using jsModuleKind es
