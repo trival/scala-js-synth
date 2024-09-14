@@ -1,13 +1,11 @@
 import './style.css'
-import { test2, test } from './scala/main.js'
+import { track2 } from './build/main.js'
 import { getCore } from './ctx.js'
-
-console.log(test2(5, 3))
 
 // sounds
 
-const val = test()
 getCore().then((core) => {
+  const val = track2()
   core.render(...val)
 })
 

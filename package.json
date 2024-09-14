@@ -6,9 +6,12 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
+    "build:scala": "scala-cli --power package --js . -f -o src/build",
+    "watch:scala": "node watchScalaFiles.js",
     "preview": "vite preview"
   },
   "devDependencies": {
+    "chokidar": "^4.0.0",
     "prettier": "^3.3.3",
     "terser": "^5.31.6",
     "typescript": "^5.5.3",

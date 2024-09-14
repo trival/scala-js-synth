@@ -1,4 +1,4 @@
-package audio.libs
+package audio.libs.elementary
 
 import scala.scalajs.js
 import scala.scalajs.js.annotation.*
@@ -24,7 +24,14 @@ object El extends js.Object:
 
   def table(props: js.Object, n: AudioNode): AudioNode = js.native
 
+  def accum(n: AudioNode, reset: AudioNode): AudioNode = js.native
+  def sr(): AudioNode = js.native
+  def z(n: AudioNode): AudioNode = js.native
+
 end El
+
+inline def sr: AudioNode = El.sr()
+inline def sampleRate: AudioNode = El.sr()
 
 extension (node: AudioNode)
   inline def cycle: AudioNode = El.cycle(node)
@@ -43,12 +50,16 @@ extension (node: AudioNode)
   inline def table(pathStr: String): AudioNode =
     El.table(new js.Object { val path = pathStr }, node)
 
-inline def $(num: Double, str: String): AudioNode =
-  El.const(
-    new js.Object:
-      val value = num
-      val key = str
-  )
+  inline def accum(reset: AudioNode): AudioNode = El.accum(node, reset)
+  inline def z: AudioNode = El.z(node)
+
+extension (num: Double)
+  inline def °(str: String): AudioNode =
+    El.const(
+      new js.Object:
+        val value = num
+        val key = str
+    )
 
 given Conversion[Double, AudioNode] with
   inline def apply(x: Double): AudioNode =
