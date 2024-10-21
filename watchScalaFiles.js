@@ -1,6 +1,5 @@
 import chokidar from 'chokidar'
 import { exec } from 'node:child_process'
-// One-liner for current directory
 
 console.log('Watching scala files for changes...')
 
